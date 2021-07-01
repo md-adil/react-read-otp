@@ -82,6 +82,5 @@ const reader = useReadOTP(callback, option);
 * `option`:
 
     * `enabled`: `boolean` either reading start or not, defaults to `true`
-    * `timeout`: `number` milliseconds to wait
-    
+    * `timeout`: `number` timeout milliseconds
     * `onError`: `(error: Error) => void` accepts a callback and will be called on error.
