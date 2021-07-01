@@ -3,5 +3,5 @@
 /test
 /.babelrc
 /.gitignore
-/.tsconfig
+/tsconfig.json
 /yarn.lock

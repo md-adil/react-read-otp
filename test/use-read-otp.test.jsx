@@ -1,7 +1,7 @@
 import 'babel-regenerator-runtime';
 import React, { useState } from "react";
 import { render, waitFor, fireEvent } from "@testing-library/react";
-import { useReadOTP } from "../lib";
+import { useReadOTP } from "../";
 window.OTPCredential = true;
 function sleep(n) {
     return new Promise(x => {
