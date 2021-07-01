@@ -3,11 +3,21 @@
   "version": "1.0.0",
   "main": "./lib/index.js",
   "repository": "https://github.com/md-adil/react-read-otp",
+  "description": "Auto read otp hook",
   "author": "Adil <md-adil@live.com>",
   "license": "MIT",
+  "keywords": [
+    "otp",
+    "auto read otp",
+    "react-hook",
+    "react"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "jest --env=jsdom"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.14.7",
