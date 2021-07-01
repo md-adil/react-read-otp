@@ -1,0 +1,21 @@
+{
+  "name": "react-read-otp",
+  "version": "1.0.0",
+  "main": "./lib/index.js",
+  "repository": "https://github.com/md-adil/react-read-otp",
+  "author": "Adil <md-adil@live.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --env=jsdom"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "@testing-library/react": "^12.0.0",
+    "@types/jest": "^26.0.23",
+    "babel-jest": "^27.0.6",
+    "babel-regenerator-runtime": "^6.5.0",
+    "jest": "^27.0.6"
+  }
+}

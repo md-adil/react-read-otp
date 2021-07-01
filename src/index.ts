@@ -23,7 +23,7 @@ interface State {
 }
 type Callback = (otp: string) => any;
 export function useReadOTP(callback: Callback, option: Option = {}) {
-    const state = useRef<State>();
+    const state = useRef<State>({});
     function abort() {
         state.current.abortController?.abort();
         if (state.current.timer) {
@@ -32,6 +32,7 @@ export function useReadOTP(callback: Callback, option: Option = {}) {
     }
     useEffect(() => {
         if (!isSupported()) {
+            console.log('Not supported, exiting');
             return;
         }
         if (!(option.enabled ?? true)) {
