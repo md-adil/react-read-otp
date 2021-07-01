@@ -12,17 +12,20 @@ let globalSignal;
 navigator.credentials = { 
     get: async function({ signal, otp: { transport } }) {
         globalSignal = signal;
+        if (!transport.includes("sms")) {
+            throw new Error('Not a valid transport');
+        }
         await sleep(100);
         if (signal.aborted) {
             throw new Error('aborted');
         }
-        return Promise.resolve({code: '12345'})
+        return { code: '12345' };
     }
 };
 
 function OTPRead() {
     const [otp, setOTP] = useState('waiting...');
-    useReadOTP(setOTP, {onError: (e) => console.error('my error:', e.message)});
+    useReadOTP(setOTP);
     return <div title="otp">{otp}</div>
 }
 
