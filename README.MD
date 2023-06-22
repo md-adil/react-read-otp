@@ -62,7 +62,7 @@ function App() {
             <h3>
                 Welcome home
             </h3>
-            <button onClick={handleSendOtp}>send otp<button>
+            <button onClick={handleSendOtp}>send otp</button>
             <input placeholder="Enter otp" value={otp} onChange={e => setOTP(e.target.value)} />
         </div>
     )
