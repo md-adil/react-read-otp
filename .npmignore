@@ -1,7 +1,0 @@
-/node_modules
-/src
-/test
-/.babelrc
-/.gitignore
-/tsconfig.json
-/yarn.lock
